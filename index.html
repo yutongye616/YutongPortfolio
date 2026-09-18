@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>YutongPortfolio — Yutong</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1>YutongPortfolio</h1>
+        <p class="tagline">Frontend developer — building fast, accessible web experiences.</p>
+        <nav class="cta">
+          <a href="#projects" class="btn">Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="projects">
+        <h2>Selected Projects</h2>
+        <ul class="projects">
+          <li>
+            <h3>Project One</h3>
+            <p>Short description. <a href="#">Live</a> · <a href="#">Source</a></p>
+          </li>
+          <li>
+            <h3>Project Two</h3>
+            <p>Short description. <a href="#">Live</a> · <a href="#">Source</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>A concise bio that highlights skills, focus areas, and contact preference.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>Or find me on <a href="#">GitHub</a> · <a href="#">LinkedIn</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Yutong</div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

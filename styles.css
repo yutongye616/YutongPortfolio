@@ -27,3 +27,9 @@ section{margin:2.5rem 0}
 
 /* light theme */
 :root.light{--bg:#f6f9fc;--card:#ffffff;--muted:#556;--accent:#0ea5e9;--white:#02121a}
+
+/* canvas bg */
+#bg-canvas{position:fixed;inset:0;z-index:-1;display:block}
+
+#projects-list{position:relative;z-index:1}
+

@@ -11,31 +11,25 @@
       <div class="container">
         <h1>YutongPortfolio</h1>
         <p class="tagline">Frontend developer — building fast, accessible web experiences.</p>
-        <nav class="cta">
-          <a href="#projects" class="btn">Projects</a>
-          <a href="#contact" class="btn btn-secondary">Contact</a>
-        </nav>
+        <div class="controls">
+          <input id="search" placeholder="Search projects..." aria-label="Search projects" />
+          <select id="filter">
+            <option value="all">All</option>
+          </select>
+          <button id="themeToggle" class="btn btn-small">Toggle Theme</button>
+        </div>
       </div>
     </header>
 
     <main class="container">
       <section id="projects">
         <h2>Selected Projects</h2>
-        <ul class="projects">
-          <li>
-            <h3>Project One</h3>
-            <p>Short description. <a href="#">Live</a> · <a href="#">Source</a></p>
-          </li>
-          <li>
-            <h3>Project Two</h3>
-            <p>Short description. <a href="#">Live</a> · <a href="#">Source</a></p>
-          </li>
-        </ul>
+        <div id="projects-list" class="projects-grid" aria-live="polite"></div>
       </section>
 
       <section id="about">
         <h2>About</h2>
-        <p>A concise bio that highlights skills, focus areas, and contact preference.</p>
+        <p id="bio">A concise bio that highlights skills, focus areas, and contact preference.</p>
       </section>
 
       <section id="contact">
@@ -49,8 +43,23 @@
       <div class="container">© <span id="year"></span> Yutong</div>
     </footer>
 
+    <template id="project-template">
+      <article class="card project-card">
+        <h3 class="project-title"></h3>
+        <p class="project-desc"></p>
+        <div class="project-meta">
+          <span class="tags"></span>
+        </div>
+        <div class="project-links">
+          <a class="live-link" target="_blank" rel="noopener">Live</a>
+          <a class="source-link" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+    </template>
+
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script src="/scripts.js" defer></script>
   </body>
 </html>

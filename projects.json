@@ -1,10 +1,10 @@
 [
   {
-    "title": "Portfolio Website",
-    "description": "This portfolio (built with plain HTML/CSS/JS).",
-    "tags": ["web","portfolio"],
-    "live": "https://yutongye616.github.io/YutongPortfolio/",
-    "source": "https://github.com/yutongye616/YutongPortfolio"
+    "title": "AutoClick",
+    "description": "AutoClick — automation tool and utilities.",
+    "tags": ["tool","automation"],
+    "live": "#",
+    "source": "https://github.com/yutongye616/AutoClick"
   },
   {
     "title": "Tiny App",

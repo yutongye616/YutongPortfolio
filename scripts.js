@@ -34,9 +34,12 @@ function renderProjects(list){
 
 function applySearchFilter(projects){
   const q = document.getElementById('search').value.toLowerCase().trim();
-  const f = document.getElementById('filter').value;
+  const f = String(document.getElementById('filter').value || '').toLowerCase();
   return projects.filter(p=>{
-    if(f !== 'all' && !(p.tags||[]).includes(f)) return false;
+    if(f !== 'all'){
+      const tagsLower = (p.tags||[]).map(t=>String(t).toLowerCase());
+      if(!tagsLower.includes(f)) return false;
+    }
     if(!q) return true;
     return (p.title + ' ' + p.description + ' ' + (p.tags||[]).join(' ')).toLowerCase().includes(q);
   })
@@ -47,10 +50,20 @@ async function init(){
   const filter = document.getElementById('filter');
   const tags = new Set();
   projects.forEach(p=> (p.tags||[]).forEach(t=>tags.add(t)));
-  tags.forEach(t=>{const opt=document.createElement('option');opt.value=t;opt.textContent=t;filter.appendChild(opt)});
+  // ensure option values are lowercase to avoid mismatches
+  tags.forEach(t=>{
+    const opt=document.createElement('option');
+    opt.value = String(t).toLowerCase();
+    opt.textContent = t;
+    filter.appendChild(opt);
+  });
+  try{ filter.value = 'all'; }catch(e){}
 
   const search = document.getElementById('search');
-  const render = ()=>renderProjects(applySearchFilter(projects));
+  const render = ()=>{
+    console.log('Render called. filter=', filter.value, 'search=', search.value);
+    renderProjects(applySearchFilter(projects));
+  };
   search.addEventListener('input', render);
   filter.addEventListener('change', render);
 

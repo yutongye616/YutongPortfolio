@@ -2,7 +2,7 @@ const projectsUrl = '/projects.json';
 
 async function fetchProjects(){
   try{
-    const res = await fetch(projectsUrl);
+    const res = await fetch(projectsUrl + '?_=' + Date.now(), {cache: 'no-store'});
     if(!res.ok) throw new Error('Failed to load');
     return await res.json();
   }catch(e){

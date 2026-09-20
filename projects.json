@@ -6,11 +6,5 @@
     "live": "#",
     "source": "https://github.com/yutongye616/FieldFix"
   },
-  {
-    "title": "Tiny App",
-    "description": "A small demo app showcasing an API integration.",
-    "tags": ["app","api"],
-    "live": "#",
-    "source": "#"
-  }
+  
 ]

@@ -33,3 +33,20 @@ section{margin:2.5rem 0}
 
 #projects-list{position:relative;z-index:1}
 
+/* Animated gradient blobs */
+.blob {
+  position:fixed;
+  border-radius:50%;
+  filter: blur(60px);
+  opacity:0.6;
+  pointer-events:none;
+  transform: translate3d(0,0,0);
+}
+.blob.b1{width:380px;height:380px;left:-120px;top:-80px;background:linear-gradient(135deg,#7dd3fc,#60a5fa);animation:move1 12s ease-in-out infinite}
+.blob.b2{width:300px;height:300px;right:-80px;bottom:-60px;background:linear-gradient(135deg,#f472b6,#fb923c);animation:move2 16s ease-in-out infinite}
+.blob.b3{width:260px;height:260px;left:20%;bottom:-100px;background:linear-gradient(135deg,#34d399,#60a5fa);animation:move3 18s ease-in-out infinite}
+
+@keyframes move1{0%{transform:translateY(0) translateX(0)}50%{transform:translateY(30px) translateX(40px)}100%{transform:translateY(0) translateX(0)}}
+@keyframes move2{0%{transform:translateY(0) translateX(0)}50%{transform:translateY(-30px) translateX(-40px)}100%{transform:translateY(0) translateX(0)}}
+@keyframes move3{0%{transform:translateY(0) translateX(0)}50%{transform:translateY(20px) translateX(-30px)}100%{transform:translateY(0) translateX(0)}}
+

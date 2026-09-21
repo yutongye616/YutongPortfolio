@@ -12,5 +12,12 @@
     "tags": ["tool","utility"],
     "live": "https://fieldfix-rw76.onrender.com/RequestForm",
     "source": "https://github.com/yutongye616/FieldFix"
+  },
+  {
+    "title": "Two-Layer NN — CIFAR-10 Classifier (Demo)",
+    "description": "From-scratch two-layer fully-connected neural network demo for CIFAR-10 classification, served with a Gradio interface.",
+    "tags": ["ai","ml","pytorch","gradio"],
+    "live": "https://huggingface.co/spaces/Yutong616/two-layer-nn-cifar10",
+    "source": "https://github.com/yutongye616/two-layer-nn-cifar10-demo"
   }
 ]

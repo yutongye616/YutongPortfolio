@@ -6,7 +6,7 @@
   --white:#e6eef6;
 }
 *{box-sizing:border-box}
-html{font-size:18px}
+html{font-size:15px}
 body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;background:linear-gradient(180deg,var(--bg),#08101a);color:var(--white)}
 .container{max-width:900px;margin:0 auto;padding:2rem}
 .hero{padding:4rem 0;text-align:center}

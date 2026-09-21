@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>YutongPortfolio — Yutong</title>
+    <title>Yutong Irene Ye — Portfolio</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <header class="hero">
       <div class="container">
-        <h1>YutongPortfolio</h1>
-        <p class="tagline">Frontend developer — building fast, accessible web experiences.</p>
+        <h1>Yutong Irene Ye</h1>
+        <p class="tagline">Software engineer &amp; data analyst, soon-to-be AI grad student — I build full-stack apps and ML tools.</p>
         <div class="controls">
           <input id="search" placeholder="Search projects..." aria-label="Search projects" />
           <select id="filter">
@@ -33,7 +33,12 @@
 
       <section id="about">
         <h2>About</h2>
-        <p id="bio">A concise bio that highlights skills, focus areas, and contact preference.</p>
+        <p id="bio">I'm Yutong (Irene) Ye, a software engineer and data analyst based in New York. I have experience shipping full-stack features (React, Stripe, CI/CD) as a Software Engineer Intern at Lutely. I hold a B.A. in Computer Science from Queens College and start a Master of Engineering in AI at CU Boulder this fall. I work comfortably across the stack — React, Django, ASP.NET Core — and build end-to-end ML and data projects on the side, a few of which are below.</p>
+      </section>
+
+      <section id="timeline">
+        <h2>Experience &amp; Education</h2>
+        <div id="timeline-list" class="timeline" aria-live="polite"></div>
       </section>
 
       <section id="contact">
@@ -54,9 +59,25 @@
         <div class="project-meta">
           <span class="tags"></span>
         </div>
+        <div class="project-stack"></div>
         <div class="project-links">
           <a class="live-link" target="_blank" rel="noopener">Live</a>
           <a class="source-link" target="_blank" rel="noopener">Source</a>
+        </div>
+      </article>
+    </template>
+
+    <template id="timeline-template">
+      <article class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content card">
+          <div class="timeline-head">
+            <h3 class="timeline-role"></h3>
+            <span class="timeline-badge"></span>
+          </div>
+          <div class="timeline-org"></div>
+          <div class="timeline-dates"></div>
+          <ul class="timeline-bullets"></ul>
         </div>
       </article>
     </template>

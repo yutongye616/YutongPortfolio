@@ -1,0 +1,44 @@
+[
+  {
+    "type": "education",
+    "org": "Queens College",
+    "role": "B.A. in Computer Science",
+    "start": "Jan 2023",
+    "end": "Dec 2025",
+    "bullets": []
+  },
+  {
+    "type": "experience",
+    "org": "Lutely",
+    "role": "Software Engineer Intern",
+    "start": "Jun 2025",
+    "end": "Aug 2025",
+    "bullets": [
+      "Spearheaded tiered membership features with Statsig-based feature gating, including upload limits for free users, prioritized uploads for paid tiers, subscription-based access control, and Stripe configuration for membership fees; collaborated with the UI designer to enhance features, increasing customer subscriptions by 25%",
+      "Built a React webhook listener for Stripe customer tier changes that triggered automated transactional emails via SendGrid, tested security with Jest, and ensured reliable cross-platform delivery across backend and frontend",
+      "Executed versioned database migrations with centralized config and environment-aware logic, integrating migration runs into CI/CD pipelines and setting up test databases for automated schema validation and deployment",
+      "Optimized UI performance by resolving stale cache issues with a randomized cache-busting strategy, improved reliability in a React app using react-query and TypeScript, and increased page load speed by 40%"
+    ]
+  },
+  {
+    "type": "experience",
+    "org": "WhiteCap Search",
+    "role": "Senior Technical Analyst",
+    "start": "Mar 2026",
+    "end": "Present",
+    "bullets": [
+      "Built and improved data models, reporting structures, ETL/data transformation steps, and reporting automation tools within Sage, helping teams get faster and more accurate access to the data they needed for daily and monthly reporting",
+      "Built and maintained cloud-based data connections linking Sage to Vena's cloud database (CubeFLEX) through scheduled automated data feeds, supporting company-wide KPIs, scorecards, and executive reports in Vena's Excel-based planning tool, while working closely with finance and business teams to keep the data reliable",
+      "Built and maintained data integration, transformation, reconciliation, and validation workflows using Sage",
+      "Troubleshot reporting and data quality issues in Sage; found root causes and fixed them"
+    ]
+  },
+  {
+    "type": "education",
+    "org": "University of Colorado Boulder",
+    "role": "Master of Engineering, Artificial Intelligence",
+    "start": "Sep 2026",
+    "end": "Dec 2027",
+    "bullets": []
+  }
+]

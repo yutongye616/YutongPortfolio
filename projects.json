@@ -1,29 +1,33 @@
 [
   {
     "title": "AutoClick",
-    "description": "AutoClick — automation tool and utilities.",
+    "description": "A microservices app for an auto service and sales center, tracking inventory, technicians, and service appointments across a Django/React stack, containerized with Docker.",
     "tags": ["tool","automation"],
+    "stack": ["Django","React","Docker","PostgreSQL"],
     "live": "http://5.161.71.152:3000/",
     "source": "https://github.com/yutongye616/AutoClick"
   },
   {
     "title": "FieldFix",
-    "description": "FieldFix — data cleaning and form validation utilities.",
+    "description": "A service-request tracking app for transit and facility operations, built as an ASP.NET Core Razor Pages web app with a parallel Microsoft Power Platform (Dataverse + Power Automate) implementation.",
     "tags": ["tool","utility"],
+    "stack": ["ASP.NET Core","C#","Razor Pages","Power Platform","Dataverse","Power Automate"],
     "live": "https://fieldfix-rw76.onrender.com/RequestForm",
     "source": "https://github.com/yutongye616/FieldFix"
   },
   {
     "title": "Two-Layer NN — CIFAR-10 Classifier (Demo)",
-    "description": "From-scratch two-layer fully-connected neural network demo for CIFAR-10 classification, served with a Gradio interface.",
+    "description": "A from-scratch two-layer neural network (manual forward/backward pass, no autograd) trained on CIFAR-10, wrapped in a Gradio app where you upload an image and get a 10-class prediction.",
     "tags": ["ai","ml","pytorch","gradio"],
+    "stack": ["Python","PyTorch","Gradio","NumPy"],
     "live": "https://huggingface.co/spaces/Yutong616/two-layer-nn-cifar10",
     "source": "https://github.com/yutongye616/two-layer-nn-cifar10-demo"
   },
   {
     "title": "RouteWatch",
-    "description": "RouteWatch — route monitoring and tracking dashboard.",
+    "description": "A Django transit operations dashboard that pulls live NYC Open Data crash feeds to monitor road conditions and service risks across routes, built as an interview-friendly monolithic app.",
     "tags": ["web","dashboard","tracking"],
+    "stack": ["Python","Django","SQLite","NYC Open Data API"],
     "live": "https://routewatch-889u.onrender.com/",
     "source": "https://github.com/yutongye616/RouteWatch"
   }

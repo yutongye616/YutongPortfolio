@@ -22,22 +22,22 @@
   },
   {
     "type": "experience",
-    "org": "WhiteCap Search",
-    "role": "Senior Technical Analyst",
-    "start": "Mar 2026",
-    "end": "Present",
+    "org": "Queens College",
+    "role": "Machine Learning Research Assistant",
+    "start": "Sep 2025",
+    "end": "Dec 2025",
     "bullets": [
-      "Built and improved data models, reporting structures, ETL/data transformation steps, and reporting automation tools within Sage, helping teams get faster and more accurate access to the data they needed for daily and monthly reporting",
-      "Built and maintained cloud-based data connections linking Sage to Vena's cloud database (CubeFLEX) through scheduled automated data feeds, supporting company-wide KPIs, scorecards, and executive reports in Vena's Excel-based planning tool, while working closely with finance and business teams to keep the data reliable",
-      "Built and maintained data integration, transformation, reconciliation, and validation workflows using Sage",
-      "Troubleshot reporting and data quality issues in Sage; found root causes and fixed them"
+      "Curated, cleaned, and documented datasets, building labeling guidelines and coordinating annotation workflows using tools such as Label Studio and Prodigy",
+      "Implemented and fine-tuned baseline models using PyTorch and TensorFlow, evaluating performance against standardized benchmarks and custom test sets with metrics such as F1 and BLEU/ROUGE",
+      "Built reproducible experiment pipelines with versioned code, data, and configs, tracking runs and metrics in tools such as MLflow and Weights & Biases",
+      "Supported retrieval-augmented generation (RAG) evaluation and prompt testing using vector stores such as FAISS and Pinecone, and summarized findings from recent literature (arXiv, ACL, NeurIPS) to inform experiment design"
     ]
   },
   {
     "type": "education",
     "org": "University of Colorado Boulder",
     "role": "Master of Engineering, Artificial Intelligence",
-    "start": "Sep 2026",
+    "start": "Jan 2026",
     "end": "Dec 2027",
     "bullets": []
   }
